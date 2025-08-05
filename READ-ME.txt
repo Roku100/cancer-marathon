@@ -1,9 +1,19 @@
-  =>  Template Name    : Fitness - Fitness Website Template
+KUTRRH Cancer Marathon
+======================
 
-  =>  Template Link    : https://htmlcodex.com/fitness-website-template
+Author: DENNIS NJUGUNA
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+Project Description:
+--------------------
+KUTRRH Cancer Marathon is a dedicated event website for the Kenyatta University Teaching, Referral & Research Hospital (KUTRRH) Cancer Marathon. 
+This platform provides information about the marathon event, registration details, event packages, and the overall mission to raise awareness and support for cancer research and treatment.
 
-  =>  Template Author  : HTML Codex
+Purpose:
+--------
+The purpose of this project is to:
+- Promote the KUTRRH Cancer Marathon event.
+- Facilitate participant registration and provide event details.
+- Raise awareness about cancer prevention, treatment, and research.
+- Engage the community and encourage support for cancer-related initiatives.
 
-  =>  Author Website   : https://htmlcodex.com
+For more information, please contact the event organizers through the contact page on the website.

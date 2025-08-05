@@ -165,11 +165,22 @@
         const now = new Date().getTime();
         const distance = countdownDate.getTime() - now;
 
+        // Get countdown elements
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+
+        if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
+            // If any element is missing, do nothing
+            return;
+        }
+
         if (distance < 0) {
-            document.getElementById("days").innerText = "00";
-            document.getElementById("hours").innerText = "00";
-            document.getElementById("minutes").innerText = "00";
-            document.getElementById("seconds").innerText = "00";
+            daysEl.innerText = "00";
+            hoursEl.innerText = "00";
+            minutesEl.innerText = "00";
+            secondsEl.innerText = "00";
             return;
         }
 
@@ -178,10 +189,10 @@
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("days").innerText = String(days).padStart(2, '0');
-        document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-        document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-        document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+        daysEl.innerText = String(days).padStart(2, '0');
+        hoursEl.innerText = String(hours).padStart(2, '0');
+        minutesEl.innerText = String(minutes).padStart(2, '0');
+        secondsEl.innerText = String(seconds).padStart(2, '0');
     }
 
     updateCountdown();
